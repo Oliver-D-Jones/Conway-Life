@@ -1,0 +1,25 @@
+body{
+  background-color: #8083f1;
+  font-family: courier;
+}
+#info{
+  padding:.5em;
+}
+input{
+  width:7rem;
+}
+table{
+  border-collapse:collapse;
+  
+}
+td{
+  width:6px;
+  height:6px;
+  border:solid 1px black;
+}
+.alive{
+  background-color: red;
+}
+.dead{
+  background-color: black;
+}

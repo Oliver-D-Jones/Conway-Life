@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Conway Game Of Life</title>
+  </head>
+<body>
+	<header class="container-fluid">
+		<div class="row justify-content-center pt-3">
+			<div class="col-12 text-center" style="display: inline-flex;justify-content: space-around;">
+				<h6><b>Generation :&nbsp;</b><span id="generations">0</span></h6>
+				<h4>Conway's Game of Life</h4>
+				<h6><b>Living Cells :&nbsp;</b><span id="living">0</span></h6>
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid bg-info" id='info'>
+		<div class="row d-flex justify-content-center">
+				<div class="col-sm-6 col-md-3">
+					<b>Delay</b>:&nbsp;<input id='speed' type="number" name="quantity" min="0" max="10000" step="100" value='500'>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<b>Cell Size:</b>&nbsp;<input id='size' type="number" name="quantity" min="0" max="10" value=6>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<b>City Width:</b>&nbsp;<input class="resize" id='width' type="number" name="quantity" min="4" max="800" value='100'>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<b>City Height:</b>&nbsp;<input class="resize" id='height' type="number" name="quantity" min="4" max="800" value='100'>
+				</div>
+		</div>
+	</div>
+				<!-- <input id='resize' type="button" value="RESIZE"> -->
+	<div class="container-fluid bg-primary">
+		<div class="row d-flex justify-content-center pb-3">
+			<h5 class="col-12 text-center">Patterns:</h5>
+			<div class="col-sm-6 col-md-3">
+				<input type='button' id="random" value='Randomize' />
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<input type='button' id="hourglass" value='Hourglass' />
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<input type='button' id="lined" value='Lined' />
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<input type='button' id="clear" value='Clear' />
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-center">
+			<input id='go' type="button" value="START">
+			<input id='initial' type="button" value="INITIAL">
+			<div class="col-12" id='insertion_point'></div>
+		</div>
+	</div>
+	<!-- <div class="container-fluid">
+		<div class="row d-flex justify-content-center">
+				<div class="col-12">
+
+				</div>
+			</div>
+		</div> -->
+	<script src="main.js"></script>
+</body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
