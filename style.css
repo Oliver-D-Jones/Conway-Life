@@ -13,9 +13,9 @@ table{
   
 }
 td{
-  width:6px;
-  height:6px;
-  border:solid 1px black;
+  width:3px;
+  height:3px;
+  border: solid 1px black
 }
 .alive{
   background-color: red;

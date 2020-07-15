@@ -130,6 +130,7 @@ for(let h = 0;h < city_height;h++){
   table_string += "<tr>";
   for(let w = 0;w < city_width;w++){
     table_string += "<td class='dead'></td>";
+
   }
   table_string += "</tr>";
 }
@@ -193,13 +194,13 @@ function cellSize(){
 //---   Event handler for when user changes cell size
 if(this.value > 0 ){
   for( let i = 0;i < a_TD.length;i++){
-    a_TD[i].style.width = a_TD[i].style.height = this.value;
+    a_TD[i].style.width = a_TD[i].style.height = this.value + "px";
     a_TD[i].style.borderWidth = 1;
   }
 }
 else{
   for( let i = 0;i < a_TD.length;i++){
-    a_TD[i].style.width = a_TD[i].style.height = this.value;
+    a_TD[i].style.width = a_TD[i].style.height = this.value + "px";
     a_TD[i].style.borderWidth = 0;
   }
 }
